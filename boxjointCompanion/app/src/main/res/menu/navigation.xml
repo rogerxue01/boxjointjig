@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_boxjoint"
+        android:icon="@drawable/box_joint"
+        android:title="@string/title_boxjoint" />
+
+    <item
+        android:id="@+id/navigation_bluetooth"
+        android:icon="@drawable/bluetooth"
+        android:title="@string/title_bluetooth" />
+
+</menu>

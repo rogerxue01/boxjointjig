@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/kerf_label"
+                style="@style/Label"
+                android:layout_width="wrap_content"
+                android:text="Kerf: " />
+            <EditText
+                android:id="@+id/kerf"
+                style="@style/Input"
+                android:layout_toEndOf="@+id/kerf_label"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tolerance_label"
+                android:text="Tolerance: "
+                android:layout_width="wrap_content"
+                style="@style/Label"/>
+            <EditText
+                android:id="@+id/tolerance"
+                style="@style/Input"
+                android:layout_toEndOf="@+id/tolerance_label"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/smoothness_label"
+                android:text="Smoothness: "
+                android:layout_width="wrap_content"
+                style="@style/Label"/>
+            <EditText
+                android:id="@+id/smoothness"
+                style="@style/Input"
+                android:layout_toEndOf="@+id/smoothness_label"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/stock_width_label"
+            android:text="Stock width: "
+            style="@style/Label"/>
+        <EditText
+            android:id="@+id/stock_width"
+            style="@style/Input"
+            android:layout_toEndOf="@+id/stock_width_label"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/minWidth_label"
+                style="@style/Label"
+                android:layout_width="wrap_content"
+                android:text="Min: " />
+            <EditText
+                android:id="@+id/minWidth"
+                style="@style/Input"
+                android:layout_toEndOf="@+id/minWidth_label"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/maxWidth_label"
+                android:text="Max: "
+                android:layout_width="wrap_content"
+                style="@style/Label"/>
+            <EditText
+                android:id="@+id/maxWidth"
+                style="@style/Input"
+                android:layout_toEndOf="@+id/maxWidth_label"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/numOfPairs_label"
+                android:text="Num: "
+                android:layout_width="wrap_content"
+                style="@style/Label"/>
+            <EditText
+                android:id="@+id/numOfPairs"
+                style="@style/Input"
+                android:layout_toEndOf="@+id/numOfPairs_label"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/random_btn"
+            android:text="Suprise me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/finger_pattern_label"
+            android:text="Pattern: "
+            style="@style/Label"/>
+        <EditText
+            android:id="@+id/finger_pattern"
+            style="@style/Input"
+            android:layout_toEndOf="@+id/finger_pattern_label"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/gap_first_output_label"
+            android:text="Gap first: "
+            style="@style/Label"/>
+        <TextView
+            android:id="@+id/gap_first_output"
+            style="@style/Input"
+            android:textSize="20sp"
+            android:layout_toEndOf="@+id/gap_first_output_label"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/send_gap_first"
+        android:text="SEND"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/finger_first_output_label"
+            android:text="Finger first: "
+            style="@style/Label"/>
+        <TextView
+            android:id="@+id/finger_first_output"
+            style="@style/Input"
+            android:textSize="20sp"
+            android:layout_toEndOf="@+id/finger_first_output_label"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/send_finger_first"
+        android:text="SEND"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"/>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
